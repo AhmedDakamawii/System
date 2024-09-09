@@ -1,0 +1,29 @@
+AT /* To Test Only*/
+
+ATE0/ATE1 /* To Open or Close Echo */
+
+AT+RST  /* To Reset */
+
+AT+CWMODE=1 /* To Select Station Mode */
+
+AT+CWJAP_CUR="TEData_9485D7","h9c16788"  /* To Connect to WI-FI */
+
+AT+CIPSTART="TCP","Ip",80 /* To Connect With Website */
+
+AT+CIPSEND=42  /* No. of Characters in HTTP LINK */
+
+>GET Link /* To Go To Certain File and Return Data */
+
+
+AT+CIPSTART="TCP","23.179.32.37",80
+
+AT+CIPSEND=44
+
+GET http://andriaaa.freevar.com/status.txt
+
+
+AT+CIPSTART="TCP","23.179.32.37",80
+
+AT+CIPSEND=44
+
+GET http://dakamwii.freevar.com/status.txt
